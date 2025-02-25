@@ -1,0 +1,9 @@
+:root {
+  --primary: rgb(42, 44, 59);
+  --secondary: rgb(35, 37, 50);
+  --ter: rgb(94, 211, 243);
+}
+
+body {
+  font-family: "Exo 2", serif;
+}
