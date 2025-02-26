@@ -1,5 +1,5 @@
 /*BarMenuCSS*/
-.barMenu {
+.bar-menu {
     position: fixed;
     top: 0;
     left: 0;
@@ -8,7 +8,7 @@
     color: white;
     display: flex;
     flex-direction: column;
-    padding: 16px;
+    padding: 5px;
     z-index: 1000;
 }
 
@@ -37,16 +37,17 @@
 .nav-menu{
     display: flex;
     flex-direction: column;
-    gap: 10px;
+    gap: 30px;
+    list-style: none;
+    padding: 0;
 }
 
 .nav-item{
-    padding:15px 0;
     color: white;
     text-decoration: none;
     transition: color .2s ease;
     text-transform: uppercase;
-    font-size: 1rem;
+    font-size: .9rem;
     font-weight: bold;
 }
 
@@ -70,7 +71,7 @@
     position: fixed;
     top: 0;
     left: 0;
-    height: 100vh;
+    height: 100%;
     width: 50px;
     display: flex;
     align-items: center;
@@ -83,16 +84,12 @@
     height: 100vh;
     background-color: gray;
     color: white;
+    background-color: #4b5563;
     border: none;
     display: flex;
     align-items: center;
     justify-content: center;
     cursor: pointer;
-    transition: background-color .2s ease;
-}
-  
-.mobile-menu-toggle:hover {
-    background-color: #4b5563;
 }
 
 .vertical-text{
@@ -109,8 +106,8 @@
     top: 0;
     left: 50px;
     height: 100vh;
-    width: 200px;
-    background-color: #1f2937;
+    width: 160px;
+    background-color: #4b5563;
     display: flex;
     flex-direction: column;
     padding: 16px;
@@ -162,3 +159,18 @@
     font-size: 14px;
     font-weight: 500;
 }
+
+button, li {
+    outline: none;
+}
+  
+button:focus, a:focus {
+    outline: none;
+    box-shadow: none;
+}
+
+* {
+    -webkit-tap-highlight-color: transparent;
+}
+  
+  

@@ -1,10 +1,14 @@
+import { useMobile } from '../context/MobileContext';
+
+import { Link } from 'react-router-dom';
 import { useState, useEffect } from 'react'
 
 import '../styles/BarMenu.css'
 
 export const BarMenu = () => {
 
-  const [isMobile, setIsMobile] = useState(window.innerWidth <= 768);
+  /*HASTA ACA %$$%$%$%$%$% */
+  const { isMobile } = useMobile();
   const [menuOpen, setMenuOpen] = useState(false);
   const [status, setStatus] = useState("Open to work");
 
@@ -50,12 +54,12 @@ export const BarMenu = () => {
                   <span className='status-text'>{status}</span>
                 </div>
               </div>
-              <nav className="nav-menu">
-                <a href="#aboutMe" className="nav-item">About me</a>
-                <a href="#projects" className="nav-item">Projects</a>
-                <a href="#experiences" className="nav-item">Experiences</a>
-                <a href="#contactMe" className="nav-item">Conctac me</a>
-              </nav>
+              <ul className="nav-menu">
+                <li><Link to="/" className='nav-item'>About me</Link></li>
+                <li><Link to="/projects" className='nav-item'>Projects</Link></li>
+                <li><Link to="/experiences" className='nav-item'>Experiences</Link></li>
+                <li><Link to="/contactme" className='nav-item'>Contact Me</Link></li>
+              </ul>
               <div className="logo-container">
 
               </div>
@@ -75,12 +79,12 @@ export const BarMenu = () => {
                 <span className='status-text'>{status}</span>
               </div>
           </div>
-          <nav className="nav-menu">
-            <a href="#aboutMe" className="nav-item">About me</a>
-            <a href="#projects" className="nav-item">Projects</a>
-            <a href="#experiences" className="nav-item">Experiences</a>
-            <a href="#contactMe" className="nav-item">Contact me</a>
-          </nav>
+          <ul className="nav-menu">
+            <li><Link to="/" className='nav-item'>About me</Link></li>
+            <li><Link to="/projects" className='nav-item'>Projects</Link></li>
+            <li><Link to="/experiences" className='nav-item'>Experiences</Link></li>
+            <li><Link to="/contactme" className='nav-item'>Contact Me</Link></li>
+          </ul>
           <div className="logo-container">
             
           </div>
