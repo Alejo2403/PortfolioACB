@@ -1,21 +1,23 @@
-import { Children, createContext, useContext, useState } from "react";
+import { createContext, useContext, useState } from 'react';
 
-//Context
+// Crear el contexto
 const MobileContext = createContext();
 
-export const MobileProvider =({children}) => {
-    const [isMobile, setIsMobile] = useState(window.innerWidth <= 769);
+// Proveedor del contexto
+export const MobileProvider = ({ children }) => {
+  const [isMobile, setIsMobile] = useState(window.innerWidth <= 768);
 
-    window.addEventListener('resize', () => {
-        setIsMobile(window.innerWidth <= 768);
-    });
+  // Actualizar estado al redimensionar
+  window.addEventListener('resize', () => {
+    setIsMobile(window.innerWidth <= 768);
+  });
 
-    return (
-        <MobileContext.Provider value={{isMobile, setIsMobile}}>
-            {children}
-        </MobileContext.Provider>
-    );
+  return (
+    <MobileContext.Provider value={{ isMobile, setIsMobile }}>
+      {children}
+    </MobileContext.Provider>
+  );
 };
 
-//Hook
+// Hook personalizado para usar el contexto
 export const useMobile = () => useContext(MobileContext);

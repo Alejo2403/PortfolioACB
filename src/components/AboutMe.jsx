@@ -1,11 +1,18 @@
-import { useMobile } from "../context/MobileContext"
+import '../styles/AboutMe.css';
+
+import { useMobile } from "../context/MobileContext";
 
 const AboutMe = () => {
-  const isMobile = useMobile();
+
+  const {isMobile} = useMobile();
   
   return (
     <>
-      <p>AboutMe</p>
+      {isMobile ? (
+        <div>desde cel phone</div>
+      ) : (
+        <div>desde pantalla big</div>
+      )}
     </>
   )
 }

@@ -11,15 +11,17 @@ body {
 /*MAIN*/
 .app-container {
   display: flex;
+  height: 100vh;
 }
 
-.content {
-  margin-left: 240px; /* Desplaza el contenido a la derecha del menú */
-  width: calc(100% - 240px);
-  padding: 30px;
-  min-height: 100vh;
-  overflow-y: auto;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-
-
+html, body, #root {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
