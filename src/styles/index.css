@@ -25,3 +25,12 @@ html, body, #root {
   height: 100%;
   overflow: hidden;
 }
+
+* {
+  -webkit-tap-highlight-color: transparent;
+}
+
+button, a, input, select, textarea {
+  -webkit-tap-highlight-color: transparent;
+  outline: none;
+}

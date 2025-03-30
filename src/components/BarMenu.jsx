@@ -1,6 +1,6 @@
 import { useMobile } from '../context/MobileContext';
 
-import { Link } from 'react-router-dom';
+import { Link, useLocation } from 'react-router-dom';
 import { useState, useEffect } from 'react'
 
 import '../styles/BarMenu.css'
@@ -9,6 +9,7 @@ export const BarMenu = () => {
   const {isMobile} = useMobile();
   const [menuOpen, setMenuOpen] = useState(false);
   const [status, setStatus] = useState("Open to work");
+  const location = useLocation();
 
   // Control de estado laboral
   const getStatusColor = (status) => {
@@ -38,10 +39,38 @@ export const BarMenu = () => {
         </div>
       </div>
       <ul className="nav-menu">
-        <li><Link to="/" className="nav-item">About me</Link></li>
-        <li><Link to="/projects" className="nav-item">Projects</Link></li>
-        <li><Link to="/experiences" className="nav-item">Experiences</Link></li>
-        <li><Link to="/contactme" className="nav-item">Contact Me</Link></li>
+        <li>
+          <Link 
+            to="/" 
+            className={`nav-item ${location.pathname === "/" ? "active" : ""}`}
+          >
+            About me
+          </Link>
+        </li>
+        <li>
+          <Link 
+            to="/projects" 
+            className={`nav-item ${location.pathname === "/projects" ? "active" : ""}`}
+          >
+            Projects
+          </Link>
+        </li>
+        <li>
+          <Link 
+            to="/experiences" 
+            className={`nav-item ${location.pathname === "/experiences" ? "active" : ""}`}
+          >
+            Experiences
+          </Link>
+        </li>
+        <li>
+          <Link 
+            to="/contactme" 
+            className={`nav-item ${location.pathname === "/contactme" ? "active" : ""}`}
+          >
+            Contact Me
+          </Link>
+        </li>
       </ul>
     </div>
 

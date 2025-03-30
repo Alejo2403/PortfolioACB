@@ -1,2 +1,54 @@
+.profile-container {
+    padding: 0 0 0 5rem;
+}
 
+.p-tittle {
+    font-size: 1rem;
+    font-weight: 700;
+    color: white;
+    margin-bottom: 1rem;
+    padding-bottom: 5rem;
+}
 
+.p-content {
+    display: flex;
+    align-items: center;
+}
+.p-content img {
+    max-width: 30%;
+    height: auto; 
+    border-radius: 8px; 
+    object-fit: cover;
+}
+
+/*Redes sociales*/
+.contacts-profile {
+    display: flex;
+    gap: 1rem; 
+}
+
+.social-button {
+    text-decoration: none;
+    color: white;
+    background-color: #444;
+    padding: 0.5rem 1rem;
+    border-radius: 5px;
+    font-size: 1rem;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem; /* Espaciado entre el ícono y el texto */
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.social-button:hover {
+    background-color: var(--ter); /* Cambia el color al pasar el mouse */
+    color: black;
+}
+
+.social-icon {
+    width: 1.2rem;
+    height: 1.2rem;
+    fill: currentColor; 
+}
+/*End Redes Sociales*/

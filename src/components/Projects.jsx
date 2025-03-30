@@ -6,11 +6,6 @@ const Projects = () => {
   
   return (
     <>
-      {isMobile ? (
-        <div>Desde cel pro</div>
-      ) : (
-        <div>Desde pantalla big</div>
-      )}
     </>
   )
 }

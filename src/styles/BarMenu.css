@@ -1,5 +1,6 @@
 /* Estilos generales del menú */
 .bar-menu {
+    width: 12rem; /* Ancho del menú */
     position: fixed;
     top: 0;
     left: -12rem; /* Oculto inicialmente */
@@ -57,6 +58,7 @@
     font-weight: bold;
     position: relative;
     transition: color .6s ease; 
+    text-transform: uppercase;
 }
   
 .nav-item:hover {
@@ -77,6 +79,14 @@
 }
 
 .nav-item:hover::after {
+    transform: translateX(-50%) scaleX(1);
+}
+
+.nav-item.active {
+    color: var(--ter);
+}
+
+.nav-item.active::after {
     transform: translateX(-50%) scaleX(1);
 }
 
