@@ -1,21 +1,26 @@
 .profile-container {
-    padding: 0 0 0 5rem;
+    padding: 0 2rem 0 4.5rem;
 }
 
 .p-tittle {
     font-size: 1rem;
     font-weight: 700;
     color: white;
-    margin-bottom: 1rem;
-    padding-bottom: 5rem;
+    padding-bottom: 1rem;
+    text-transform: uppercase;
 }
 
 .p-content {
+    font-size: 1rem;
+    color: white;
+    line-height: 1.5;
     display: flex;
+    flex-direction: column;
     align-items: center;
+    justify-content: center;
 }
 .p-content img {
-    max-width: 30%;
+    max-width: 60%;
     height: auto; 
     border-radius: 8px; 
     object-fit: cover;
@@ -23,8 +28,9 @@
 
 /*Redes sociales*/
 .contacts-profile {
+    margin-top: 1rem;
     display: flex;
-    gap: 1rem; 
+    gap: .8rem; 
 }
 
 .social-button {
