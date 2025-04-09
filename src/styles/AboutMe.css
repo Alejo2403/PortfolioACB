@@ -1,60 +1,65 @@
 .profile-container {
-    padding: 0 2rem 0 4.5rem;
+    padding: 0 1rem 0 2.5rem;
+    box-sizing: border-box;
+    max-width: 100%;
 }
 
 .p-tittle {
+   text-transform: uppercase;
     font-size: 1rem;
-    font-weight: 700;
-    color: white;
-    padding-bottom: 1rem;
-    text-transform: uppercase;
+}
+
+.profile-container img {
+    max-width: 60%;
 }
 
 .p-content {
-    font-size: 1rem;
-    color: white;
-    line-height: 1.5;
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: center;
-}
-.p-content img {
-    max-width: 60%;
-    height: auto; 
-    border-radius: 8px; 
-    object-fit: cover;
 }
 
-/*Redes sociales*/
+.description {
+    word-wrap: break-word;
+    overflow-wrap: break-word;
+    font-size: 1.2rem;
+    line-height: 1.5rem;
+    margin: 1rem 0 1rem .5rem;
+    font-size: large;
+}
+
+/*
+REDES SOCIALES 
+*/
 .contacts-profile {
-    margin-top: 1rem;
     display: flex;
-    gap: .8rem; 
+    flex-wrap: wrap;
+    gap: 1rem;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem;
 }
 
 .social-button {
-    text-decoration: none;
-    color: white;
-    background-color: #444;
-    padding: 0.5rem 1rem;
-    border-radius: 5px;
-    font-size: 1rem;
-    font-weight: bold;
     display: flex;
     align-items: center;
-    gap: 0.5rem; /* Espaciado entre el ícono y el texto */
-    transition: background-color 0.3s ease, color 0.3s ease;
+    gap: .5rem;
+    text-decoration: none;
+    background-color: #444444;
+    color: white;
+    padding: .5rem 1rem;
+    border-radius: .5rem;
+    font-weight: 700;
+    justify-content: center;
+    flex: 1 1 2rem;
+    transition: background-color 0.3s ease;
 }
 
 .social-button:hover {
-    background-color: var(--ter); /* Cambia el color al pasar el mouse */
-    color: black;
+    background-color: #555555;
 }
 
-.social-icon {
-    width: 1.2rem;
-    height: 1.2rem;
-    fill: currentColor; 
+.social-icon{
+    width: 2rem;
+    height: 2rem;
 }
-/*End Redes Sociales*/
