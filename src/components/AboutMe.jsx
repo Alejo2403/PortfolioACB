@@ -37,6 +37,43 @@ const AboutMe = () => {
           <span>MyCV</span>
         </a>
       </div>
+      <div class="skills-section">
+        <h2 class="skills-title">Skills</h2>
+        <div class="skills">
+          <div class="skill">
+            <i class="fab fa-html5"></i>
+            <span>HTML</span>
+          </div>
+          <div class="skill">
+            <i class="fab fa-css3-alt"></i>
+            <span>CSS</span>
+          </div>
+          <div class="skill">
+            <i class="fab fa-js-square"></i>
+            <span>JavaScript</span>
+          </div>
+          <div class="skill">
+            <i class="fab fa-react"></i>
+            <span>React</span>
+          </div>
+          <div class="skill">
+            <i class="fab fa-python"></i>
+            <span>Python</span>
+          </div>
+          <div class="skill">
+            <i class="fab fa-git-alt"></i>
+            <span>Git</span>
+          </div>
+          <div class="skill">
+            <i class="fas fa-database"></i>
+            <span>SQL</span>
+          </div>
+          <div class="skill">
+            <i class="fas fa-bolt"></i>
+            <span>PowerApps</span>
+          </div>
+        </div>
+      </div>
     </div>
   )
 }
