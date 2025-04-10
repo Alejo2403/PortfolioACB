@@ -64,7 +64,7 @@ REDES SOCIALES
     height: 2rem;
 }
 
-/*PANTALLA PEQUEÑA*/
+/*PANTALLA GRANDE*/
 @media (min-width: 768px) {
     .profile-container {
         padding: 0 0 0 20%;
@@ -81,7 +81,7 @@ REDES SOCIALES
     }
 
     .description{
-        padding-right: 2rem;
+        padding-right: 10rem;
     }
 
     .profile-container img {
@@ -113,7 +113,7 @@ REDES SOCIALES
 .skills-title {
     font-size: 2rem;
     text-transform: uppercase;
-    margin: 3rem 0 2rem 0;
+    margin: 2rem 0 2rem 0;
 }
 
 .skills {
@@ -121,14 +121,25 @@ REDES SOCIALES
     flex-wrap: wrap;
     gap: 1rem;
     justify-content: center;
-    padding: 0 1rem 2rem 0;
+    align-items: center;
+    padding: 1rem;
+}
+
+@media (min-width: 768px) {
+    .skills {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 1rem;
+        justify-content: flex-start;
+        padding: 0 0 2rem 0;
+    }
 }
 
 .skill {
     background-color: #444444;
     color: white;
     padding: .5rem 1rem;
-    border-radius: 1rem;
+    border-radius: .5rem;
     display: flex;
     align-items: center;
     gap: .5rem;
