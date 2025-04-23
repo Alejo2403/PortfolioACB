@@ -1,11 +1,10 @@
-import { useMobile } from "../context/MobileContext"
-
 const Projects = () => {
-  
-  const {isMobile} = useMobile();
   
   return (
     <>
+      <div>
+        <h1>Projects</h1>
+      </div>
     </>
   )
 }

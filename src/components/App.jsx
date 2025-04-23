@@ -7,6 +7,7 @@ import AboutMe from './AboutMe.jsx'
 import Projects from './Projects.jsx'
 
 import '../styles/index.css'
+import Experiences from './Experiences.jsx'
 
 function App() {
 
@@ -20,6 +21,7 @@ function App() {
               <Routes>
                 <Route path='/' element={<AboutMe/>}/>
                 <Route path='/projects' element={<Projects/>}/>
+                <Route path='/experiences' element={<Experiences/>}/>
               </Routes>
             </div>
           </div>

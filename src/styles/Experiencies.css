@@ -1,0 +1,54 @@
+.experiencies-container {
+    margin: 0 0 0 2.5rem;
+    display: flex;
+}
+
+.e-tittle {
+    text-transform: uppercase;
+    font-size: 1rem;
+    margin-bottom: 1.5rem;
+}
+
+.experiences img {
+    max-width: 70%;
+    display: block;
+    margin: 0 auto 1.5rem auto;
+}
+
+.e-name {
+    font-size: 1rem;
+    font-weight: bold;
+}
+
+.experience-left .e-role, .e-date {
+    color: var(--ter);
+    font-size: .85rem;
+}
+
+.experience p {
+    font-size: .9rem;
+}
+
+.experiences {
+    gap: 1.5rem;
+    display: flex;
+    flex-direction: column;
+}
+
+.experience {
+    position: relative;
+    padding-bottom: 1.5rem;
+}
+
+.experience::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 10%;
+    width: 80%;
+    height: 2px;
+    background: linear-gradient(to right, var(--ter), white);
+    border-radius: 5px;
+}
+
+/*BIG SCREEN*/
