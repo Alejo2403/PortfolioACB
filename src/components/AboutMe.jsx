@@ -31,7 +31,7 @@ const AboutMe = () => {
               <span>LinkedIn</span>
             </a>
 
-            <a href="./public/downloads/HV.pdf" download className="social-button">
+            <a href="./public/downloads/H.pdf" download className="social-button">
               <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" className="social-icon download-icon">
                 <path d="M12 16l4-4h-3V4h-2v8H8l4 4zm-7 2v2h14v-2H5z"/>
               </svg>
